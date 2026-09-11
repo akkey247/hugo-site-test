@@ -1,9 +1,9 @@
 backend:
   name: github
-  repo: YOUR_USERNAME/YOUR_REPO      # 例: getkimoto/my-blog
-  branch: main
-  base_url: https://YOUR_OAUTH_APP.vercel.app   # 手順 5 で決まる
-  auth_endpoint: auth
+  repo: akkey247/hugo-site-test
+  branch: master
+  base_url: https://netlify-cms-oauth-provider-node-theta.vercel.app
+  auth_endpoint: api/begin
 
 media_folder: static/images
 public_folder: /images
