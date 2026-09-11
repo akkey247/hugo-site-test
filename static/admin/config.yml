@@ -1,0 +1,23 @@
+backend:
+  name: github
+  repo: YOUR_USERNAME/YOUR_REPO      # 例: getkimoto/my-blog
+  branch: main
+  base_url: https://YOUR_OAUTH_APP.vercel.app   # 手順 5 で決まる
+  auth_endpoint: auth
+
+media_folder: static/images
+public_folder: /images
+
+collections:
+  - name: posts
+    label: 記事
+    folder: content/posts
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: md
+    format: yaml-frontmatter
+    fields:
+      - { label: タイトル, name: title, widget: string }
+      - { label: 公開日, name: date, widget: datetime }
+      - { label: 下書き, name: draft, widget: boolean, default: true }
+      - { label: 本文, name: body, widget: markdown }
