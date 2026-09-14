@@ -5,8 +5,11 @@ backend:
   base_url: https://crimson-morning-feff.akkey52417.workers.dev/
   auth_endpoint: auth
 
+site_url: https://akkey247.github.io/hugo-site-test
+display_url: https://akkey247.github.io/hugo-site-test
+
 media_folder: static/images
-public_folder: /images
+public_folder: /hugo-site-test/images
 
 collections:
   - name: posts
