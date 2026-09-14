@@ -2,8 +2,8 @@ backend:
   name: github
   repo: akkey247/hugo-site-test
   branch: master
-  base_url: https://netlify-cms-oauth-provider-node-theta.vercel.app
-  auth_endpoint: api/begin
+  base_url: https://crimson-morning-feff.akkey52417.workers.dev/
+  auth_endpoint: auth
 
 media_folder: static/images
 public_folder: /images
